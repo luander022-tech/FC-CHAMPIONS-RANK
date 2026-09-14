@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rank FC Mobile | Up de Contas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="logo">
+      Rank <span>FC</span> Mobile
+    </div>
+
+    <div class="header-right">
+
+      <!-- IDIOMAS -->
+      <div class="language">
+        <button class="language-button" id="languageButton">
+          🌐 <span id="currentLanguage">Português 🇧🇷</span>
+          <span class="arrow">⌄</span>
+        </button>
+
+        <div class="language-menu" id="languageMenu">
+
+          <button data-lang="pt">
+            🇧🇷 Português
+          </button>
+
+          <button data-lang="en">
+            🇺🇸 English
+          </button>
+
+          <button data-lang="de">
+            🇩🇪 Deutsch
+          </button>
+
+          <button data-lang="es">
+            🇪🇸 Español
+          </button>
+
+          <button data-lang="fr">
+            🇫🇷 Français
+          </button>
+
+          <button data-lang="it">
+            🇮🇹 Italiano
+          </button>
+
+          <button data-lang="pt-pt">
+            🇵🇹 Português
+          </button>
+
+          <button data-lang="tr">
+            🇹🇷 Türkçe
+          </button>
+
+          <button data-lang="nl">
+            🇳🇱 Nederlands
+          </button>
+
+          <button data-lang="ja">
+            🇯🇵 日本語
+          </button>
+
+          <button data-lang="ko">
+            🇰🇷 한국어
+          </button>
+
+        </div>
+      </div>
+
+      <a
+        href="https://wa.me/553498058249?text=Olá! Quero fazer up de conta no FC Mobile"
+        class="btn-whatsapp-header"
+        target="_blank"
+      >
+        WhatsApp
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-badge">
+      ⚡ FC MOBILE
+    </div>
+
+    <h1>
+      <span data-i18n="heroTitle">UP DE CONTAS</span><br>
+      <span class="red" data-i18n="heroSubtitle">
+        RANK FC CHAMPIONS
+      </span>
+    </h1>
+
+    <p data-i18n="heroDescription">
+      Evolua sua conta com praticidade e acompanhamento durante o serviço.
+    </p>
+
+  </section>
+
+
+  <!-- PACOTES -->
+  <section class="section">
+
+    <h2 class="section-title" data-i18n="packagesTitle">
+      Escolha a quantidade de estrelas
+    </h2>
+
+    <div class="title-line"></div>
+
+
+    <div class="cards">
+
+      <div class="card" onclick="openModal(10, 5)">
+        <div class="stars">10★</div>
+        <div class="label" data-i18n="stars">Estrelas</div>
+        <div class="price">R$ 5,00</div>
+        <div class="select-text" data-i18n="select">Selecionar →</div>
+      </div>
+
+
+      <div class="card" onclick="openModal(20, 10)">
+        <div class="stars">20★</div>
+        <div class="label" data-i18n="stars">Estrelas</div>
+        <div class="price">R$ 10,00</div>
+        <div class="select-text" data-i18n="select">Selecionar →</div>
+      </div>
+
+
+      <div class="card" onclick="openModal(30, 20)">
+        <div class="stars">30★</div>
+        <div class="label" data-i18n="stars">Estrelas</div>
+        <div class="price">R$ 20,00</div>
+        <div class="select-text" data-i18n="select">Selecionar →</div>
+      </div>
+
+
+      <div class="card" onclick="openModal(40, 30)">
+        <div class="stars">40★</div>
+        <div class="label" data-i18n="stars">Estrelas</div>
+        <div class="price">R$ 30,00</div>
+        <div class="select-text" data-i18n="select">Selecionar →</div>
+      </div>
+
+
+      <div class="card popular" onclick="openModal(50, 40)">
+
+        <div class="badge" data-i18n="popular">
+          POPULAR
+        </div>
+
+        <div class="stars">50★</div>
+
+        <div class="label" data-i18n="stars">
+          Estrelas
+        </div>
+
+        <div class="price">R$ 40,00</div>
+
+        <div class="select-text" data-i18n="select">
+          Selecionar →
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- GARANTIAS -->
+    <div class="guarantees">
+
+      <div class="guarantee">
+        <div class="icon">🤖</div>
+
+        <h3 data-i18n="botTitle">
+          Processo automatizado
+        </h3>
+
+        <p data-i18n="botText">
+          Serviço realizado através de um sistema automatizado.
+        </p>
+      </div>
+
+
+      <div class="guarantee">
+        <div class="icon">🔗</div>
+
+        <h3 data-i18n="eaTitle">
+          Conta EA Sports
+        </h3>
+
+        <p data-i18n="eaText">
+          Aceitamos somente contas vinculadas à EA Sports.
+        </p>
+      </div>
+
+
+      <div class="guarantee">
+        <div class="icon">🛡️</div>
+
+        <h3 data-i18n="securityTitle">
+          Atendimento transparente
+        </h3>
+
+        <p data-i18n="securityText">
+          Todas as condições do serviço são informadas antes do início.
+        </p>
+      </div>
+
+
+      <div class="guarantee">
+        <div class="icon">⏱️</div>
+
+        <h3 data-i18n="timeTitle">
+          Até 1 semana
+        </h3>
+
+        <p data-i18n="timeText">
+          O prazo pode variar conforme a quantidade solicitada.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta-final">
+
+    <div class="cta-glow"></div>
+
+    <h2 data-i18n="ctaTitle">
+      Pronto para evoluir?
+    </h2>
+
+    <p data-i18n="ctaText">
+      Escolha um pacote acima ou fale diretamente conosco.
+    </p>
+
+    <a
+      href="https://wa.me/553498058249?text=Olá! Quero fazer up de conta no FC Mobile"
+      class="btn-whatsapp-big"
+      target="_blank"
+    >
+      💬 <span data-i18n="whatsapp">
+        Chamar no WhatsApp
+      </span>
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <strong>
+      Rank FC Mobile
+    </strong>
+
+    <br>
+
+    <span data-i18n="footer">
+      Serviço de evolução de Rank • Atendimento transparente
+    </span>
+
+  </footer>
+
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal">
+
+    <div class="modal">
+
+      <button
+        class="modal-close"
+        onclick="closeModal()"
+      >
+        ×
+      </button>
+
+
+      <div class="modal-top">
+        <span>FC MOBILE</span>
+      </div>
+
+
+      <h2 id="modal-title">
+        10 Estrelas
+      </h2>
+
+      <div
+        class="price-big"
+        id="modal-price"
+      >
+        R$ 5,00
+      </div>
+
+
+      <div class="modal-info">
+
+        <strong data-i18n="about">
+          Sobre o serviço:
+        </strong>
+
+        <ul>
+
+          <li data-i18n="info1">
+            Processo realizado através de sistema automatizado
+          </li>
+
+          <li data-i18n="info2">
+            Somente contas vinculadas à EA Sports
+          </li>
+
+          <li data-i18n="info3">
+            Condições informadas antes do início
+          </li>
+
+          <li data-i18n="info4">
+            Prazo de até 1 semana
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- PIX -->
+      <div class="pix-box">
+
+        <p data-i18n="pixTitle">
+          Pagamento via Pix
+        </p>
+
+        <div class="pix-key">
+          luander022@gmail.com
+        </div>
+
+        <button
+          class="btn-copy"
+          onclick="copyPix()"
+          data-i18n="copy"
+        >
+          Copiar chave Pix
+        </button>
+
+      </div>
+
+
+      <div class="modal-footer">
+
+        <span data-i18n="afterPayment">
+          Após o pagamento, envie o comprovante pelo
+        </span>
+
+        <a
+          href="https://wa.me/553498058249?text=Olá! Já realizei o pagamento do serviço. Segue o comprovante."
+          target="_blank"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+  </html>
